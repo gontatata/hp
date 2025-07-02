@@ -1,12 +1,76 @@
-# React + Vite
+# 合同会社ＣｈａｎｇｅＬｅａｐ - 公式ウェブサイト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+未来を創造するテクノロジーパートナー、合同会社ＣｈａｎｇｅＬｅａｐの公式ウェブサイトです。
 
-Currently, two official plugins are available:
+## 技術スタック
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19
+- Vite
+- React Bootstrap
+- React Router DOM
 
-## Expanding the ESLint configuration
+## 開発環境のセットアップ
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+
+# ビルド
+npm run build
+
+# プレビュー
+npm run preview
+```
+
+## GitHub Pages へのデプロイ
+
+### 1. 必要なパッケージのインストール
+
+```bash
+npm install --save-dev gh-pages
+```
+
+### 2. GitHub リポジトリの作成
+
+1. GitHub で新しいリポジトリを作成（例: `myhp`）
+2. ローカルリポジトリを GitHub にプッシュ
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/yourusername/myhp.git
+git push -u origin main
+```
+
+### 3. GitHub Pages の設定
+
+1. GitHub リポジトリの設定ページに移動
+2. "Pages"セクションで以下を設定：
+   - Source: "Deploy from a branch"
+   - Branch: "gh-pages"
+   - Folder: "/ (root)"
+
+### 4. デプロイの実行
+
+```bash
+npm run deploy
+```
+
+### 5. カスタムドメインの設定（オプション）
+
+GitHub Pages の設定でカスタムドメインを設定できます。
+
+## サイト構成
+
+- **ホーム**: 会社概要とメインメッセージ
+- **導入事例**: 過去のプロジェクトと成果
+- **会社概要**: 詳細な会社情報
+
+## ライセンス
+
+このプロジェクトは合同会社ＣｈａｎｇｅＬｅａｐの所有物です。
