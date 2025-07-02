@@ -1,29 +1,23 @@
 
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const About = () => {
   return (
-    <Container className="mt-5">
-      <h2>企業情報</h2>
-      <Row className="mt-4">
-        <Col md={12}>
-          <h4>会社概要</h4>
-          <p><strong>会社名:</strong> 株式会社TechSolution</p>
-          <p><strong>設立:</strong> 2010年4月1日</p>
-          <p><strong>代表者:</strong> 代表取締役 山田 太郎</p>
-          <p><strong>所在地:</strong> 東京都千代田区丸の内1-2-3</p>
-        </Col>
-      </Row>
-      <Row className="mt-4">
-        <Col md={12}>
-          <h4>事業内容</h4>
-          <ul>
-            <li>カスタムソフトウェア開発</li>
-            <li>Webアプリケーション開発</li>
-            <li>モバイルアプリケーション開発</li>
-            <li>ITコンサルティング</li>
-          </ul>
+    <Container fluid className="mt-5 p-5">
+      <h2 className="text-center mb-4">企業情報</h2>
+      <Row className="justify-content-center">
+        <Col md={8} className="mb-4">
+          <Card className="h-100 shadow-sm">
+            <Card.Body>
+              <Card.Title as="h4" className="text-center">会社概要</Card.Title>
+              <hr />
+              <p><strong>企業名:</strong> 合同会社ＣｈａｎｇｅＬｅａｐ (チェンジリープ)</p>
+              <p><strong>設立:</strong> 2023年11月</p>
+              <p><strong>所在地:</strong> 千葉県市川市新井１丁目１９番地３２－３１０号（グラン・シャトー）</p>
+              <p><strong>法人番号:</strong> 1040003023712</p>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
     </Container>

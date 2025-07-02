@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="d-flex flex-column min-vh-100">
         <NavigationBar />
-        <main className="flex-grow-1">
+        <main className="pt-5">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

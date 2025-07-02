@@ -24,7 +24,7 @@ const CaseStudies = () => {
       <Row className="mt-4">
         {caseStudies.map((study, index) => (
           <Col md={4} key={index} className="mb-4">
-            <Card>
+            <Card className="shadow-sm h-100">
               <Card.Body>
                 <Card.Title>{study.title}</Card.Title>
                 <Card.Text>{study.description}</Card.Text>
