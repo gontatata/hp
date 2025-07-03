@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>合同会社ＣｈａｎｇｅＬｅａｐ</title>
     <script type="text/javascript">
+      // /hp/から/にリダイレクト
+      (function () {
+        var currentPath = window.location.pathname;
+        if (currentPath === "/hp/" || currentPath === "/hp") {
+          var newUrl =
+            window.location.origin +
+            "/" +
+            window.location.search +
+            window.location.hash;
+          window.location.replace(newUrl);
+          return;
+        }
+      })();
+
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
